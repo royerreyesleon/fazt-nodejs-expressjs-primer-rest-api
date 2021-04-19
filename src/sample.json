@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "title": "Aliens",
+        "director":"james cameron",
+        "year": "2021",
+        "rating":"8.5"
+    },
+    {
+        "id": "2",
+        "title": "Aliens",
+        "director":"james cameron",
+        "year": "2021",
+        "rating":"8.5"
+    }
+]
