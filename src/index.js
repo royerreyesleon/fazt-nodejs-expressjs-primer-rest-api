@@ -5,7 +5,7 @@ const morgan = require('morgan');
 
 // require('dotenv').config()
 // const port = process.env.PORT || 3000;
-app.set('port', process.env.PORT || 3000)
+app.set('port', process.env.PORT || 3004)
 app.set('json spaces', 2);
 
 // MORGAN ES UN MIDDLEWARE, ES UNA FUNCION QUE PROCESA DATOS ANTES QUE EL SERVIDOR LOS RECIBA

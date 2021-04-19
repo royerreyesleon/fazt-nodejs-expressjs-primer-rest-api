@@ -1,8 +1,10 @@
 const { Router } = require("express");
 const router = Router();
 
+// LIBRERIA PARA HACER CICLOS.
 const _ = require('underscore')
 
+// TRAER LOS DATOS DEL ARCHIVO JSON
 const movies = require('../sample.json');
 
 // router.get('/movies' , (req , res)=>{
