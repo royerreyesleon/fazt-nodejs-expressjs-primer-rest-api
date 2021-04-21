@@ -21,6 +21,7 @@ app.use(express.json());
 app.use(require('./routes/routes'));
 // app.use(require('./routes/movies'));
 app.use('/api/movies', require('./routes/movies'));
+app.use('/api/users', require('./routes/users'));
 
 // INICIANDO EL SERVIDOR
 // app.listen(port , ()=> console.log('> Server is up and running on port : ' + port))
