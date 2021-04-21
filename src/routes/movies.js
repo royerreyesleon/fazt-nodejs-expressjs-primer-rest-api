@@ -5,7 +5,10 @@ const _ = require('underscore')
 
 const movies = require('../sample.json');
 
+
+
 // router.get('/movies' , (req , res)=>{
+// http://localhost:3002/api/movies
 router.get('/' , (req , res)=>{
 
 //    res.send('hello from simple server :)')
@@ -13,6 +16,17 @@ router.get('/' , (req , res)=>{
 
 })
 
+
+/*
+http://localhost:3002/api/movies
+Content-Type application/json
+{
+    "director":"Royer",
+    "title":"adas",
+    "year":"2020",
+    "rating":"10"
+}
+*/
 router.post('/' , (req , res)=>{
     console.log(req.body);
     const {title, director, year, rating} = req.body;
@@ -32,6 +46,9 @@ router.post('/' , (req , res)=>{
 
 })
 
+
+
+// http://localhost:3002/api/movies/3
 router.delete('/:id' , (req , res)=>{
 
     const {id} = req.params;
@@ -49,6 +66,18 @@ router.delete('/:id' , (req , res)=>{
 
 });
 
+
+
+/*
+http://localhost:3002/api/movies/1
+Content-Type application/json
+{
+    "director":"Royer",
+    "title":"adas",
+    "year":"2020",
+    "rating":"10"
+}
+*/
 router.put('/:id' , (req , res)=>{
     const {id} = req.params;
     const {title, director, year, rating} = req.body;

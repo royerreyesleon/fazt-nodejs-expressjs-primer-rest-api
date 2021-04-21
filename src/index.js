@@ -1,11 +1,11 @@
 const express = require('express')
-const app = express();
-const morgan = require('morgan');
+const app     = express();
+const morgan  = require('morgan');
 
 
 // require('dotenv').config()
-// const port = process.env.PORT || 3000;
-app.set('port', process.env.PORT || 3000)
+// const port = process.env.PORT || 3002;
+app.set('port', process.env.PORT || 3002)
 app.set('json spaces', 2);
 
 // MORGAN ES UN MIDDLEWARE, ES UNA FUNCION QUE PROCESA DATOS ANTES QUE EL SERVIDOR LOS RECIBA
